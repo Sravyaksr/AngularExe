@@ -1,0 +1,22 @@
+<fieldset>
+    <legend>Register:</legend>
+    <form  name="form">
+    Email:<br>
+    <input ng-model="email" type="email" name="email">
+    <div class="errorMsg" ng-show="email == null" >Required valid email</div>
+    <br>
+    Username:<br>
+    <input ng-model="username" type="text" name="username">
+    <br>
+    Password:<br>
+    <input ng-model="password" type="password" name="password" ng-required>
+    <div class="errorMsg" ng-show="password == null || password.length < 7" >Password size must be atleast 7</div>
+    <br>
+    Retype Password:<br>
+    <input ng-model="retypepassword" type="password" name="retypepassword">
+    <div class="errorMsg" ng-show="password != retypepassword" >Password and retype password should match</div>
+    <br><br>
+    </form>
+    <button ng-click="reset()" class="reset"> Reset</button>
+    <button ng-click="registerUser()" class="submit"> Register </button>
+</fieldset>
