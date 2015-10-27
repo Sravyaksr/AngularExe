@@ -1,0 +1,33 @@
+.errorMsg{
+    color : red;
+    font-size: 0.8em;
+}
+
+button{
+    padding : 5px 8px;
+    margin : 5px 10px;
+    cursor: pointer;
+}
+.reset{
+    color : white;
+    background-color : gray;
+}
+.reset:hover{
+    background-color: white;
+    color : black;
+}
+
+.submit{
+    color : black;
+    background-color:greenyellow;
+}
+.submit:hover{
+    background-color:white;
+    border-color : greenyellow;
+}
+
+.link{
+    color : blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
